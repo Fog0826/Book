@@ -122,10 +122,10 @@ cd (文件夹)   //
 git init    //
 git remote add origin (仓库地址)    //
 git pull origin (指定的分支名)    //
-git track (上传的文件)    //
+git lfs track (上传的文件)    //
+git checkout (指定的分支名)   //
 git add (上传的文件)    //
 git commit -m "文件介绍"    //
-git checkout (指定的分支名)   //
 git remote set-url origin https://(token)@github.com/(username)/(仓库名).git    //
 git push origin (指定的分支名)    //
 ```
