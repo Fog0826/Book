@@ -69,7 +69,7 @@ fatal: Authentication failed for 'https://github.com/Fog0826/Book.git/'
 其次，第二步我按照教程走并没有在keychain access中找到github的语句，可能是我通过谷歌浏览器进行访问，cookie数据并没有存在keychain access中，所以我更换了一种方式
 
 ```
-git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+git 
 ```
 
 在终端中运行了这个命令，将<githubtoken>，<username>，<repositoryname>（仓库名称）进行替换成自己的数据，然后就
@@ -114,3 +114,20 @@ rm -rf  .git   #删除
 git branch
 
 就可以看到仓库文件夹下隐藏的.git被删除
+
+后续，我在执行过程中发现这样上传并不能把本地文件上传到指定的分支中，于是我查阅了很多文档，最终发现一个成功的方法
+
+```
+cd (文件夹)   //
+git init    //
+git remote add origin (仓库地址)    //
+git pull origin (指定的分支名)    //
+git track (上传的文件)    //
+git add (上传的文件)    //
+git commit -m "文件介绍"    //
+git checkout (指定的分支名)   //
+git remote set-url origin https://(token)@github.com/(username)/(仓库名).git    //
+git push origin (指定的分支名)    //
+```
+
+大功告成
