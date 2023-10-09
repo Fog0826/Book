@@ -131,3 +131,5 @@ git push origin (指定的分支名)    //
 ```
 
 大功告成
+![Alt text](image.png)
+最后附上批量上传的成功截图
