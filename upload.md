@@ -63,6 +63,7 @@ fatal: Authentication failed for 'https://github.com/Fog0826/Book.git/'
   
 首先，在github上创建个人访问令牌
   Settings → Developer Settings → Personal Access Token → Generate New Token (Give your password) → Fillup the form → click Generate token → Copy the generated Token, it will be something like `ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta`
+  
   上述是创建个人令牌的方式，我在创建过程中选择的是第二个经典的选项，还有一个beta的版本我没有试过，同时注意在创建中需要勾选上`repo`选项，否则token是没有权限访问GitHub仓库的，并且token只会展示一次，之后不再展示，需要记录好自己的token
   
 其次，第二步我按照教程走并没有在keychain access中找到github的语句，可能是我通过谷歌浏览器进行访问，cookie数据并没有存在keychain access中，所以我更换了一种方式
